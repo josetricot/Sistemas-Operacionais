@@ -1,0 +1,19 @@
+Hertz 1
+Khz 1000
+Mhz 1000.000
+Ghz 1 000 000 000 1 bilhão
+
+3.6 Ghz 3 600 000 000 3,6 bilhões
+
+1 hora = 3600 palmas
+1 dia = 86.400 palmas
+1 ano = 31.536.000 palmas
+
+114 anos para bater 3 600 000 000 palmas
+3 600 000 000 processador
+
+processador faz 1 segundo o que faríamos em 114 anos
+
+x o número de núcleos
+
+busca, decodifica, executa

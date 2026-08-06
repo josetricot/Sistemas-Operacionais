@@ -1,0 +1,11 @@
+Instale o Sistemas Operacional Linux sobre uma Máquina Virtual. 
+
+1) Instale o virtualizar Virtual Box no seu computador
+
+https://www.virtualbox.org/
+
+2) Crie uma MV (Máquina Virtual) e Instale o Linux. 
+
+Preferencialmente o Debian (ou de sua escolha, deve justificar)
+
+3) Faca um "print screen" da MV e cole no Fórum demonstrando a instalação (e usabilidade)
