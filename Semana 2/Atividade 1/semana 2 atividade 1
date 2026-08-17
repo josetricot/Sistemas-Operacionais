@@ -1,0 +1,54 @@
+Atividade da Semana 02 - Atividade 01
+Desenvolva um Shell Script em Bash no servidor aula.inf.poa.ifrs.edu.br, chamado:
+
+admin_sistema.sh
+
+O script deverá apresentar um menu interativo com as seguintes opções:
+
+========================================
+       ADMINISTRADOR DO SISTEMA
+========================================
+
+1 - Informações do sistema
+2 - Informações do usuário
+3 - Verificar memória
+4 - Sair
+
+Escolha uma opção:
+Funcionalidades
+1 – Informações do sistema
+
+Apresentar:
+
+Nome do computador;
+Sistema operacional;
+Versão do kernel;
+Data e hora.
+2 – Informações do usuário
+
+Apresentar:
+
+Nome do usuário;
+UID;
+Grupo;
+Diretório pessoal.
+3 – Verificar memória
+
+Apresentar informações sobre a memória RAM e informar se a situação está adequada ou não, utilizando uma condição (if).
+
+4 – Sair
+
+Encerrar o programa apresentando uma mensagem ao usuário.
+
+Requisitos
+O script deverá utilizar:
+
+Variáveis;
+if;
+case;
+while ou for;
+Pelo menos uma função.
+Postar no fórum:
+
+O código-fonte do arquivo admin_sistema.sh;
+Um print da execução do programa no terminal.

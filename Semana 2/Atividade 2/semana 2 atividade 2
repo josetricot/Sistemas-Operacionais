@@ -1,0 +1,53 @@
+Atividade da Semana 02 - Atividade 02
+Desenvolva  Shell Scripts em Bash, cada um com uma função diferente.
+
+Script 1 – Verificação de usuário
+Crie um script que solicite o nome de um usuário e verifique se ele existe no sistema.
+
+O script deverá informar:
+
+Se o usuário existe;
+Se não existe.
+Use CAT e GREP e COUNT
+
+Script 2 – Contagem de arquivos
+Crie um script que solicite o caminho de um diretório e informe:
+
+Quantos arquivos existem no diretório;
+Quantos subdiretórios existem.
+Use o Comando LS, COUNT e GREP
+
+Script 3 – Números pares e ímpares
+Crie um script que solicite um número ao usuário e mostre todos os números de 1 até o número informado, identificando quais são pares e quais são ímpares.
+
+Script 4 – Verificação de memória
+Crie um script que consulte a memória RAM e informe:
+
+Memória total;
+Memória utilizada;
+Memória disponível.
+Use o comando FREE e CUT.
+
+Script 5 – Monitoramento de processos
+Crie um script que mostre os processos em execução no sistema.
+
+O script deverá apresentar, pelo menos:
+
+PID;
+Usuário;
+Uso de CPU;
+Uso de memória;
+Nome do processo.
+Use o Comando PS e CUT
+
+Para cada script, entregar:
+
+O código-fonte;
+Um print da execução no terminal.
+Identifique os arquivos como:
+
+script01.sh
+script02.sh
+script03.sh
+script04.sh
+script05.sh
