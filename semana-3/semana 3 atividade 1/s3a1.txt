@@ -1,0 +1,30 @@
+Atividade da Semana 03 - Atividade 01 - Instalação de Pacotes
+Na última aula, executamos os comandos cowsay, fortune, sl, cmatrix e bb. Agora, você deve procurar outro comando da categoria funny commands e instalá-lo na sua Máquina Virtual, criada na Semana 01. Por exemplo, escolha um novo comando ou procure algo inovador:
+
+Exemplos:
+
+figlet → Texto em arte ASCII.
+
+toilet → Texto colorido em ASCII com mais estilos.
+
+espeak → Faz o computador “falar”.
+
+oneko → Um gatinho que persegue o mouse.
+
+nyancat → O famoso Nyan Cat no terminal.
+
+Pesquise no como instalar o comando usando apt install. Após a pesquisa:
+
+1 Instale o comando escolhido.
+
+2 Execute o comando no terminal e observe o que ele faz.
+
+Apresente evidências:
+
+a) Captura de tela da instalação.
+
+b) Captura de tela da execução.
+
+c) Breve descrição do que o comando faz.
+
+Observação: Para instalar você precisa ter permissão de root (pesquisar  "sudo su" e a diferença de "su -")
