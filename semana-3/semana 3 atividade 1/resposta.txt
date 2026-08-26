@@ -1,0 +1,9 @@
+O jeito mais seguro é usar somente sudo antes do comando que precisa de privilégios de administrador, pois os privilégios de root são usados apenas naquela linha específica. Exemplo: sudo apt install moon-buggy.
+
+sudo su eleva os privilégios para o superusuário (root) e abre um shell como root. Porém, não faz uma troca completa para o ambiente de login do root. Algumas configurações e variáveis do usuário original podem permanecer, dependendo da configuração do sudo e do su. Por isso, pode ser mais fácil acabar usando arquivos, caminhos ou configurações relacionados ao usuário normal enquanto se está executando comandos como root, o que pode causar problemas de permissões.
+
+su - (ou su -l) faz uma troca para o superusuário e carrega o ambiente completo de login do root. É como iniciar uma nova sessão de login diretamente como root. O diretório atual normalmente muda para /root, e as configurações de perfil do root são carregadas.
+
+Por padrão, o Ubuntu bloqueia o uso da senha direta da conta root. Por isso, su - geralmente não pode ser usado diretamente com a senha do usuário comum. Para obter um shell de login como root, pode-se usar sudo su -.
+
+Para a instalação de pacotes e tarefas pontuais, a prática mais comum e recomendada é usar apenas sudo antes do comando, como sudo apt install. Dessa forma, não é necessário permanecer em uma sessão como root.
