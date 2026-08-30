@@ -1,0 +1,24 @@
+Modifique o código-fonte calcula.cpp, atualmente estruturado para executar dois cálculos de forma sequencial, de modo que os cálculos sejam executados utilizando threads, visando medir ganhos de desempenho .
+
+Altere a implementação do programa para que cada cálculo seja executado em uma thread distinta.
+
+Meça o tempo de execução nas seguintes versões:
+
+Versão sequencial (original).
+
+Versão paralela (com threads).
+
+Publique no fórum as evidências da execução, incluindo:
+
+Capturas de tela (ou registros) do tempo medido para cada versão (execute 3x).
+
+Comparação e breve análise dos resultados (execute 3x).
+
+Execute o programa:
+
+No servidor aula.inf.poa.ifrs.edu.br.
+Observações:
+
+Obs. 1: As funções implementadas exigem parâmetros; portanto, ao criar a thread, será necessário passar o parâmetro.
+
+Obs. 2: Antes de recorrer a ferramentas de Inteligência Artificial para resolver o problema, tente desenvolvê-lo individualmente. Somente após obter sua própria solução, compare-a com a gerada pela ferramenta de I.A., identificando semelhanças e diferenças. Lembre-se, na avaliação, será você e seu caderno! 
