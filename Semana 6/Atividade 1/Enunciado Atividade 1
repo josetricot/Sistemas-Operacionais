@@ -1,0 +1,17 @@
+O Programa Gera_Sequencia.c está demorando muito para finalizar a execução. 
+
+O programa consiste em gerar arquivos com valores Randômicos divisíveis conforme critério. 
+
+Observando o código, é possível dividir a tarefa para que os arquivos sejam criados em paralelo e não sequencialmente, diminuindo o tempo de execução.
+
+ 
+
+Sua missão,
+
+a) Dividir a execução em Processos e medir o tempo.
+
+b) Dividir a execução em THREADS e medir o tempo.
+
+Qual dos métodos executou mais rápido? 
+
+Qual percentual % foi o ganho de tempo?
