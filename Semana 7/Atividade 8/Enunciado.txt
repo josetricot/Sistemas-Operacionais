@@ -1,0 +1,6 @@
+Fórum Publico da Semana 07 - Atividade 08 - Instalando Pacotes
+a) Acesse a Máquina Virtual (MV).
+
+b) Instalar o pacote "btop". 
+
+c) Mostrar evidencias da instalação e da execução. 

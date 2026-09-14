@@ -1,0 +1,14 @@
+Fórum Publico da Semana 07 - Atividade 06 - Manipulando Arquivos entre diretorios
+a) Acesse a Máquina Virtual (MV).
+
+b) Acesse o diretório /tmp.
+
+c) Crie um diretório chamado dados e, dentro dele, crie outro diretório chamado SisOp e dentro de SisOp, crie o diretório Disciplinas.
+
+d) Após, acesse o seu diretório HOME e crie um arquivo chamado aula01.txt.
+
+e) Acesse o diretório raiz /.
+
+f) Estando no diretório raiz, copie o arquivo aula01.txt para o diretório SisOp, localizado dentro de Disciplinas que está no tmp.
+
+g) Mostre evidência dos comandos utilizados e dos resultados na tela, comprovando a execução.

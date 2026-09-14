@@ -1,0 +1,7 @@
+opicional
+antes do returno 0;
+waitpid(pid1, NULL, 0);
+waitpid(pid2, NULL, 0);
+waitpid(pid3, NULL, 0);
+
+precisa #include <sys/wait.h>

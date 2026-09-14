@@ -1,0 +1,5 @@
+Resumo dos comandos usados
+Item	Comando
+d.1	./impares.sh &
+d.2	./pares.sh → Ctrl+Z → bg
+e	ps aux | grep impares → kill <PID> → print

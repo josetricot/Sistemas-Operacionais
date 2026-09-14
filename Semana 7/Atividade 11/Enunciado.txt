@@ -1,0 +1,23 @@
+Fórum Publico da Semana 07 - Atividade 11 - Threads
+a) Crie um programa em linguagem C que utilize threads para executar quatro contagens de forma concorrente.
+
+O programa deverá realizar as seguintes contagens:
+
+Thread 1: contar de 1 até 10;
+Thread 2: contar de 10 até 20;
+Thread 3: contar de 20 até 30;
+Thread 4: contar de 30 até 40.
+Cada contagem deverá ser executada por uma thread diferente.
+
+Para facilitar a visualização da execução concorrente, o programa deverá:
+
+apresentar a identificação da thread responsável pela contagem;
+apresentar cada número no console;
+utilizar sleep(1) após a apresentação de cada número.
+b) Ao executar o programa, observe a ordem em que os números são apresentados. A saída não precisa seguir a ordem das threads, pois elas serão executadas de forma concorrente pelo sistema operacional.
+
+Ao final, o programa deverá aguardar a conclusão das quatro threads antes de terminar sua execução.
+
+c) Mostrar evidencias da instalação e da execução. 
+
+Observação: Se ainda não foi instalado, deverá Instalar o compilador "C"

@@ -1,0 +1,10 @@
+Não estava conseguindo acessar o servidor aula atraves da maquina virtual
+(conflito entre meu ip e do Maycke...)
+Então pelo meu windows entrei na minha maquina virtual
+dei ip a no terminal o da maquina linux para pegar ip e conectei pelo windows usando ssh
+
+a) cat /proc/sys/kernel/version exibe versão, data, hora que foi compilado
+b) cat /proc/sys/kernel/hostname nome da máquino no sistema operacional 
+c) cat /proc/sys/kernel/ostype nome do tipo de sistema operacional
+
+Versão do kernel do linux atualmente: Versão 7.2.4 (a que utilizamos é bem antiga)

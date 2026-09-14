@@ -1,0 +1,352 @@
+Fórum Publico da Semana 07 - Questões Teóricas
+📘 Lista de Atividades – Sistemas Operacionais
+Atividade 01
+Explique o objetivo principal do sistema operacional (para que serve).
+
+Sistema operacional serve como um programa/software capaz de ligar gerenciar os recursos físicos da máquina (através dos drives, portas) e o acessos dos programas aos recursos da máquina e informações do sistema.
+
+O Sistema Operacional atua como esse grande intermediário e organizador dos recursos físicos e lógicos.
+
+Atividade 02
+Por que as aplicações não devem acessar diretamente o hardware?
+
+Gerenciamento (respeitar a fila de execução), segurança (impedir o acesso indevido à memória) e abstração de hardware (poupar o programador de ter que conhecer todas as combinações infinitas de peças).
+
+Para garantir que os aplicativos realmente respeitem essas regras e não tentem "furar a fila" ou acessar o hardware por conta própria, o computador utiliza um mecanismo físico de bloqueio no processador.
+
+Atividade 03
+Explique os modos de operação do núcleo.
+Dica: supervisor/núcleo e usuário.
+
+A diferença fundamental entre esses dois modos é o nível de privilégio (ou poder de acesso) que cada um possui:
+
+Modo Núcleo (Kernel): É onde o coração do Sistema Operacional trabalha. Ele tem passe VIP e acesso total/irrestrito a todo o hardware e à memória do computador.
+
+Modo Usuário: É onde rodam os seus aplicativos (navegador, editor de texto, jogos). Eles executam em um ambiente restrito e não podem encostar no hardware diretamente.
+
+Ex: Digitando um texto no Word (Modo Usuário) e clico em "Salvar". Como o Word não tem permissão para gravar no disco rígido diretamente, ele precisa "pedir um favor" ao Sistema Operacional (Modo Núcleo).
+
+Atividade 04
+Explique o conceito de interrupção. Quando ocorre e qual a sua utilização?
+
+O que é: Um sinal físico (hardware) ou lógico (software) enviado ao processador para pausar o que ele está fazendo no momento.
+
+Quando ocorre: Sempre que um evento exige atenção imediata, como apertar uma tecla, clicar no mouse ou a chegada de um pacote de rede.
+
+Qual a utilidade: Evitar que o processador desperdice tempo "perguntando" o tempo todo para o mouse se ele se moveu. O processador pode focar em outras coisas e só parar quando for "avisado" (interrompido) de que algo aconteceu.
+
+Atividade 05
+Explique a finalidade de uma chamada de sistema em um sistema operacional.
+
+Através das Chamadas de Sistema (System Calls) que os aplicativos no Modo Usuário solicitam recursos—como abrir pastas, alocar memória ou usar a placa de rede—para o Modo Núcleo de forma totalmente controlada e segura.
+
+Atividade 06
+Cite e explique as estruturas de SO (arquiteturas do núcleo – Slide Aula 01).
+
+O núcleo (kernel) de um Sistema Operacional: a arquitetura Monolítica e a arquitetura de Micro-núcleo (ou Microkernel).
+
+Monolítica: O núcleo é um programa único, gigante e super rápido. Tudo roda lá dentro junto, com privilégios máximos (gerenciamento de memória, sistema de arquivos, drivers de vídeo, áudio, rede, etc.).
+
+Estabilidade: se um driver de placa de vídeo for mal programado, tiver um erro grave e "quebrar", no Monolítico o computador inteiro (o Sistema Operacional todo) para.
+
+Micro-núcleo: O núcleo é minúsculo, contendo apenas o estritamente essencial. O restante (drivers de vídeo, sistema de arquivos) roda do lado de fora, no ambiente mais restrito do "Modo Usuário", funcionando como peças separadas que conversam entre si.
+
+No Micro-núcleo, como o driver está rodando isolado no Modo Usuário (como se fosse um aplicativo comum), se ele tiver um erro fatal, apenas ele trava. O Sistema Operacional continua firme e forte e pode, inclusive, reiniciar esse driver automaticamente nos bastidores sem que você precise reiniciar o computador.
+
+Atividade 07
+Defina o conceito de virtualização e mostre suas vantagens.
+
+A virtualização é, basicamente, usar software para criar uma versão "virtual" (ou simulada) de algo físico. O exemplo mais famoso é a Máquina Virtual (VM), como o VirtualBox ou VMware. É a famosa "matrioska" (aquelas bonecas russas): um computador rodando dentro de outro computador.
+
+Economia: Economiza dinheiro (não precisa comprar várias máquinas físicas), espaço físico na mesa e até energia elétrica.
+
+Agilidade e Segurança: Pode rodar o Windows e o Linux ao mesmo tempo na tela. Além disso, se o sistema virtual "quebrar" ou pegar um vírus durante um teste, você não estraga o seu computador real; basta apagar a máquina virtual e criar outra nova em segundos.
+
+Atividade 08
+Explique a diferença entre programa e tarefa.
+
+Programa: É uma entidade passiva. É o código compilado e salvo no HD (como uma receita de bolo escrita em um caderno).
+
+Tarefa (Processo): É uma entidade ativa. É o programa em execução, alocado na memória RAM, processando dados e possuindo um PID (é a ação de ir para a cozinha e efetivamente fazer o bolo).
+
+Atividade 09
+Explique o conceito de sistema preemptivo e cooperativo.
+
+Sistema Cooperativo: A própria tarefa no processador decide quando vai liberar o controle para o Sistema Operacional (ela "coopera"). Se a tarefa travar, o computador inteiro trava.
+
+Sistema Preemptivo: O Sistema Operacional tem o poder absoluto. Ele distribui "fatias de tempo" (quantum) e, quando o tempo acaba, ele interrompe (preempta) a tarefa à força para dar a vez a outra, garantindo que o sistema nunca congele por causa de um único programa.
+
+Atividade 10
+Em SO, o que é o programa monitor?
+
+O Programa Monitor foi o "avô" dos sistemas operacionais. Ele ficava sempre residente em um pedaço da memória para ler o próximo trabalho da fila e iniciá-lo assim que o anterior terminasse, automatizando o processo e economizando o tempo valioso que o operador humano gastava trocando cartões.
+
+Atividade 11
+Quais são os recursos que o SO pode gerenciar?
+
+Processador (CPU): Gerencia o tempo (fatias de tempo) que cada processo tem para executar.
+
+Memória Principal (RAM): Controla qual parte da memória está sendo usada, por quem, e o que está livre.
+
+Dispositivos de Entrada e Saída (E/S): Gerencia o acesso ao mouse, teclado, tela, impressoras, rede, etc.
+
+Sistema de Arquivos: Organiza como os dados são gravados e lidos no disco rígido ou SSD.
+
+Atividade 12
+Cite os estados das tarefas em sistemas:
+
+a) Sistemas monotarefa: O processo entra no processador e fica no estado de Execução (o "executando", a ação acontecendo). Quando ele finaliza sua missão e libera o sistema, ele vai para o estado de Terminado ou Concluído
+
+b) Sistemas multitarefa:
+
+Execução (usando o processador)
+
+Pronto (na fila, com tudo que precisa para rodar)
+
+Bloqueado / Espera (estacionado, aguardando um evento externo)
+
+c) Sistemas de tempo compartilhado:
+
+Estados são exatamente os mesmos da letra b, a única diferença é que, em sistemas de tempo compartilhado, o processo sai de Execução e volta para Pronto constantemente, assim que a sua "fatia de tempo" (quantum) acaba.
+
+Atividade 13
+O que é e por que é importante a troca de contexto?
+
+Acontece quando o Sistema Operacional pausa um programa (como o Word) para deixar outro (como o Navegador) usar o processador um pouco, trocando o turno deles. Ele salva o estado do processo para não precisar fazer tudo de novo.
+
+Como o processador faz essa pausa e troca de turnos milhares de vezes por segundo, nós temos a ilusão de que o Word e o Navegador estão rodando simultaneamente. Essa é a grande importância da troca de contexto: ela viabiliza a multitarefa nos computadores modernos.
+
+Atividade 14
+Em S.O. baseados no Unix, para que servem os comandos:
+
+a) [pstree] desenha a hierarquia dos processos na tela, mostrando visualmente quem é o processo pai e quem são os processos filhos ligados a ele.
+
+b) [htop] é um top mais moderno
+
+c) [ps] lista os processos um embaixo do outro
+
+d) [nice]  usado para iniciar um programa definindo o quão "educado" ele será. (Curiosidade: a escala vai de -20, que é o mais egoísta/alta prioridade, até +19, que é o mais educado/baixa prioridade).
+
+e) [renice] redefine o grau de prioridade
+
+f) [fg] abreviação de foreground. Esse comando traz um processo de volta para o primeiro plano. Ele tira a tarefa do segundo plano (ou de um estado pausado) e a coloca na sua tela principal para que você interaja com ela diretamente.
+
+g) [bg] abreviação de background. Esse comando retoma um processo que foi pausado (geralmente com Ctrl + Z) e o coloca para rodar em segundo plano, liberando o terminal para você continuar digitando outros comandos.
+
+h) [jobs] lista todos os processos atuais que estão rodando ou parados sob o controle do terminal atual. Ele mostra um número de identificação (ID do job) para cada tarefa, o status (Rodeando/Parado) e o comando original.
+
+Ex: Digita jobs e vê que tem um editor de texto pausado identificado como [1].Se digitar fg %1, o editor de texto volta a ocupar a tela inteira para você continuar escrevendo. Se digitar bg %1, o processo continua rodando "escondido" enquanto o terminal fica livre para uso.
+
+i) [kill] encerra, "mata" o processo.
+
+Atividade 15
+No Linux, o que acontece quando um processo pai é encerrado?
+
+Quando o processo pai é encerrado antes dos filhos, esses filhos que continuam rodando se tornam Processos Órfãos.
+
+Como o Linux é muito organizado e não permite processos "soltos" sem supervisão, o processo número 1 do sistema (chamado init ou systemd, que é o primeiro processo que liga quando você inicia o computador) automaticamente "adota" esses órfãos. Ele vira o novo pai deles para garantir que eles sejam recolhidos da memória corretamente quando terminarem de executar.
+
+Atividade 16
+Explique a diferença em thread e processo. 
+
+Processo: É um programa em execução com seu próprio espaço de memória isolado. Se um processo falha, os outros continuam rodando normalmente. O Sistema Operacional gasta mais energia/tempo para criá-lo.
+
+Thread: É uma "linha de execução" dentro de um processo. Todas as threads do mesmo processo compartilham a mesma memória e os mesmos recursos. Elas são mais "leves" e rápidas de criar, mas requerem cuidado (se uma thread trava, pode derrubar o processo inteiro).
+
+Atividade 17
+Explique o que é TCB (Task Control Block).
+
+É a "ficha" ou estrutura de dados onde o Sistema Operacional guarda todas essas informações de uma tarefa que foi pausada por uma troca de contexto.
+
+Escrito dentro dessa "ficha". O SO guarda nela informações vitais como:
+
+O número de identificação (PID).
+O estado atual (Pronto, Execução ou Bloqueado).
+Os valores que estavam na memória RAM daquele programa.
+O Program Counter (um marcador que aponta exatamente a linha de código onde o programa foi pausado).
+
+Atividade 18
+Explique a diferença entre os comandos top e htop.
+
+Ambos têm a mesma função básica de listar os processos do Linux em tempo real, monitorando o uso da CPU e da RAM. Porém, o top é a ferramenta original e mais antiga, enquanto o htop é uma versão moderna e aprimorada.
+
+htop exibe gráficos coloridos, permite o uso do mouse e navegação mais fácil pelos menus, enquanto o top exibe apenas texto simples em preto e branco.
+
+Atividade 19
+No linux, como iniciar um programa já em segundo plano?
+
+& (o "E" comercial).
+Exemplo prático: ./meu_programa &
+
+O comando jobs lista os processos que estão rodando ali no fundo do seu terminal.
+O comando fg (foreground) puxa o processo do fundo de volta para a tela principal.
+O comando bg (background) manda um processo pausado voltar a rodar no fundo.
+
+Atividade 20
+Cite duas formas de implementar a comunicação entre processos.
+
+Sockets, Pipes.
+
+Atividade 21
+Explique a diferença de comunicação de processos usando Sockets, Pipes e Fila de Mensagens.
+
+Operacional age como um "serviço de correios" entre os processos.
+Sockets: Comunicação através de rede (internet ou local).
+Dois processos conversam através de uma conexão de rede. Um pode estar no seu computador e o outro lá no servidor do Google, mas eles também podem usar isso para conversar dentro do mesmo computador.
+
+Pipes: Tubo de comunicação rápida e direta (geralmente unidirecional) entre dois processos.
+A comunicação flui de forma contínua, geralmente em uma única direção, como água em um tubo. O Processo A escreve de um lado e o Processo B lê imediatamente do outro.
+
+Fila de Mensagens: Funciona como uma caixa postal, onde os processos deixam pacotes de dados para o outro ler no seu próprio ritmo.
+O Processo A deixa pacotes de dados guardados em uma "caixa postal" no Sistema Operacional. O Processo B pode passar lá e ler esses pacotes depois, no seu próprio ritmo, sem precisarem estar conectados no mesmo exato momento.
+
+Atividade 22
+Explique a necessidade dos processos se comunicarem.
+
+O isolamento garante a segurança para que um programa não trave o outro, mas a comunicação (IPC - Inter-Process Communication) garante que o computador seja útil e integrado. Exemplo: copiar e colar.
+
+Atividade 23
+Explique as diferenças entre cd, cd.., cd /, cd - , cd . cd../home
+
+[cd nome da pasta] abre a pasta
+[cd ..] volta um nível acima da pasta atual
+[cd /] entra na raiz
+[cd -] igual comando "voltar". Leva de volta para a última pasta em que você estava antes do seu último comando cd
+[cd .] não sai do lugar - o ponto quer dizer onde está
+[cd../home] volta uma pasta acima (um nível) e depois dá o cd (entra) na pasta home
+
+Atividade 24
+No Linux, qual é a diferença entre $ e # no prompt?
+
+O $ representa o usuário comum (limitado às suas próprias pastas), e o # representa o superusuário ou Administrador (root), que tem poder absoluto no sistema.
+
+Atividade 25
+
+Em S.O., o que se entende por afinidade de tarefa? 
+
+Normalmente, o Sistema Operacional fica jogando os processos de um núcleo para o outro o tempo todo para tentar equilibrar o peso do trabalho.
+Afinidade de tarefa (ou Processor Affinity): configurar o Sistema Operacional para "amarrar" um processo pesado a um (ou mais) núcleos específicos do processador. Como o processo não fica "pulando de galho em galho", ele aproveita ao máximo os dados que já estão guardadinhos na memória Cache daquele núcleo, o que deixa a execução muito mais rápida.
+
+Atividade 26
+Como mostrar todos os processos que estão sendo executados no linux e no windows?
+
+No Linux usamos comandos como ps (tira uma "foto" estática dos processo no momento que é executado),top ou htop.
+
+No Windows é o Gerenciador de Tarefas.
+
+Atividade 27
+Com base nas afirmações abaixo, selecione a alternativa correta:
+
+I – O sistema operacional é uma camada de software que opera entre o hardware e os programas aplicativos voltados ao usuário final.
+
+II – O sistema operacional é uma estrutura de software ampla, muitas vezes complexa, que incorpora aspectos de baixo e alto nível.
+
+(F) III – Exige que o programador domine como funciona cada dispositivo.
+
+O Sistema Operacional é justamente poupar o programador desse trabalho difícil. Ele cria a famosa "abstração de hardware
+
+IV – Oferece ao programador uma forma homogênea de acesso aos dispositivos físicos.
+
+As afirmações corretas são:
+
+a) I e II
+
+b) I, II e III
+
+-> c) I, II e IV
+
+d) II e IV
+
+e) Todas
+
+Atividade 28
+Com relação à criação de um novo processo no Linux por meio de um fork, assinale com V (verdadeiro) ou F (falso):
+
+(V) A memória entre os dois processos possui as mesmas variáveis e valores.
+
+	Quando o fork() é executado, o processo filho nasce como um "clone" exato do pai. Ele 	recebe uma cópia idêntica de todas as variáveis e valores que existiam até aquele 	exato milissegundo.
+
+(F) A memória dos dois processos é compartilhada.
+
+	Processos têm memórias isoladas. Eles recebem uma cópia no início, mas não 	compartilham a mesma memória. Se o filho alterar o valor de uma variável logo em 	seguida, o pai não sentirá nenhuma diferença.
+
+(F) O código-fonte não é o mesmo.
+
+	O código-fonte é exatamente o mesmo. Como você viu na prática, tanto o Pai quanto os 	Filhos nasceram do mesmo arquivo .c e rodaram o mesmo programa.
+
+(V) A criação do processo é feita por meio de uma chamada de sistema.
+
+	Criar um processo exige separar um espaço na memória RAM e gerar um PID. Como vimos 	na Atividade 05, aplicativos não podem fazer isso sozinhos, então o fork() é 	justamente uma Chamada de Sistema.
+
+Atividade 29
+Em um sistema Linux, qual comando é utilizado para verificar os usuários conectados no sistema e qual processo é utilizado para encerrar (derrubar) um usuário conectado?
+
+who: Mostra de forma simples quem está logado no momento.
+w: Mostra os usuários conectados e o que eles estão executando no sistema.
+
+Para derrubar um usuário, você precisa encerrar os processos associados à sessão dele
+
+Pelo nome do usuário (pkill):
+Encerra todos os processos pertencentes a um usuário específico de forma forçada:
+sudo pkill -9 -u nome_do_usuario
+
+Pelo número do processo (kill):
+Primeiro você identifica o PID (número de identificação do processo) da sessão do usuário e depois o finaliza:
+sudo kill -9 PID 
+
+Atividade 30
+Escreva P para preemptivo ou C para cooperativo em cada afirmação:
+
+Cooperativo (C): A própria tarefa tem o controle. Ela só sai do processador quando quer (ou quando termina).
+
+Preemptivo (P): O Sistema Operacional é quem manda. Ele tira a tarefa à força se precisar (por exemplo, quando acaba a "fatia de tempo" ou quantum).
+
+(C) A tarefa permanece no processador até que libere voluntariamente.
+(P) A tarefa pode perder o processador caso termine seu quantum de tempo.
+(C) A tarefa pode perder o processador caso execute uma chamada de sistema.
+
+Na vida real, os processos perdem a vez ao fazer uma chamada de sistema demorada (como ler um arquivo pesado no HD) em ambos os tipos de Sistema Operacional. Porém, em exercícios teóricos, associamos isso fortemente ao sistema Cooperativo porque, nele, essa é praticamente a única maneira de o processo ceder a CPU além de terminar a execução.
+
+(C) A tarefa permanece no processador até terminar de executar.
+(P) A tarefa pode perder o processador caso ocorra uma interrupção que acorde uma tarefa mais prioritária.
+
+Atividade 31
+Com relação às prioridades das tarefas no Windows e Linux, utilize V para verdadeiro e F para falso:
+
+(V) No Windows, o usuário pode atribuir uma prioridade ao processo.
+(F) No Windows, o usuário pode atribuir uma prioridade diferente para cada thread do processo.
+
+O Sistema Operacional não permite que o usuário altere a prioridade de uma thread específica de fora do programa. Apenas o próprio código do aplicativo pode gerenciar isso internamente para manter a sincronia. O usuário no Gerenciador de Tarefas só consegue mudar a prioridade do processo inteiro.
+
+(V) No Linux, podemos ajustar a prioridade dos processos por meio dos comandos nice e renice.
+(V) No Linux, existem tarefas interativas e de tempo real.
+
+Atividade 32
+Em um sistema Multitarefa Preemptivo, quais são as transições de estados das tarefas válidas?
+
+Pronto -> Executando
+Selecionada pelo escalonador.
+
+Executando -> Pronto
+Fim do tempo limite (quantum) ou interrupção de prioridade.
+
+Executando -> Bloqueado
+Solicitação de E/S ou espera por recurso.
+
+Bloqueado -> Pronto
+Evento concluído / Recurso liberado.
+
+Atividade 33
+O que faz o comando:
+[chmod u-x enviar.sh] remove permissão do dono de executar 
+
+Atividade 34
+O que faz o comando:
+[chmod 754 enviar.sh] define que dono pode tudo (ler, escrever e executar), o grupo ler e executar e o outros só ler
+
+Atividade 35
+O que faz o comando:
+[apt install apache2] instala o apache2
+
+O apt é o gerenciador de pacotes (uma espécie de "App Store" do Linux).
+Como instalar programas altera o sistema, você geralmente precisará do poder de Administrador, rodando como [sudo apt install apache2]

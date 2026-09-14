@@ -1,0 +1,30 @@
+Fórum Publico da Semana 07 - Atividade 04 - Criando Diretório
+Acesse a sua Máquina Virtual (MV) e:
+
+b) Acesse o diretório /tmp (localizado na raiz /).
+
+c) Crie uma pasta chamada aula.
+
+d) Acesse a pasta aula.
+
+e) Mostre o caminho do diretório atual usando o comando  pwd
+
+f) Crie a seguinte estrutura dentro do diretório aula: 
+
+./projeto/
+ ├── src/
+ │    ├── controllers/
+ │    ├── models/
+ │    └── views/
+ │
+ ├── docs/
+ │    ├── especificacao/
+ │    ├── diagramas/
+ │    └── relatorios/
+ │
+ └── tests/
+     ├── unitarios/
+     ├── integracao/
+     └── sistema/
+
+f) Publicar evidência dos comandos utilizados e da tela, comprovando a execução (utilitário tree).

@@ -1,0 +1,12 @@
+Fórum Publico da Semana 07 - Atividade 12 - Alternando Processos
+a) Acessar a Máquina Virtual (MV).
+
+b) Na MV, executar o comando top.
+
+c) Colocar o comando top para segundo plano, suspenso.
+
+d) Visualizar os processos em segundo plano.
+
+e) Alterar o processo em segundo plano para o primeiro plano, em execução.
+
+f) Mostrar os comandos utilizados em cada etapa.

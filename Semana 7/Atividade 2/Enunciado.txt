@@ -1,0 +1,10 @@
+Fórum Publico da Semana 07 - Atividade 02 - Verificando Processos do Kernel
+2) Acessar MV através de SSH (verifique se é necessário instalar)  execute e descreva a saída dos comandos abaixo:
+ 
+a) cat /proc/sys/kernel/version
+ 
+b) cat /proc/sys/kernel/hostname
+ 
+c) cat /proc/sys/kernel/ostype
+
+Atividade: mostrar a tela de retorno da cada Comando e descrever a saída. 

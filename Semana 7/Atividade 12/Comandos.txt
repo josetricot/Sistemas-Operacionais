@@ -1,0 +1,9 @@
+[top] executa o monitor de processos
+
+[ctrl + z] suspende o processo e devolve o terminal
+
+[jobs] lista os jobs do shell
+
+[fg] retoma o job em primeiro plano
+
+[q] sai, encerra o top

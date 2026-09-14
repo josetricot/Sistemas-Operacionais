@@ -1,0 +1,12 @@
+Fórum Publico da Semana 07 - Atividade 01 - Criando MV
+01)  Crie uma MV (Linux Debian12) utilizando o disco disponível no link abaixo.
+
+A MV deve usar exatamente 6GiB de Memória RAM e uma interface de Rede conectada em modo Bridge. 8 Núcleos de processadores. 
+
+https://drive.google.com/file/d/14gaCtWUvmFRSzwqany52oEy-Xe8ofJTn/view
+
+Obs.: Existe um usuário chamado “ifrs" e sua senha é “ifrs”.  A senha de root é “ifrs". 
+
+Obs 2: Todas as atividades são na MV pessoal. 
+
+Atividade: Submeta a tela do Terminal exibindo o IP da MV e a quantidade de memória RAM. (dois comandos distintos)

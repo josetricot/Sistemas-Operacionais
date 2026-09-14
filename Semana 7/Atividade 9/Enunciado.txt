@@ -1,0 +1,8 @@
+Fórum Publico da Semana 07 - Atividade 09 - SUDO
+a) Adicione o usuário "ifrs" ao grupo "sudo".
+
+b) Através do usuário ifrs, tente reiniciar a sua máquina virtual (MV).
+
+Exemplo de Comando: 
+$ shutdown -r now
+c) Mostrar evidencias da instalação e da execução. 

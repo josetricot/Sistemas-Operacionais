@@ -1,0 +1,20 @@
+Fórum Publico da Semana 07 - Atividade 05- Manipulando Arquivos
+a) Acesse a Máquina Virtual (MV).
+
+b) Acesse o diretório /tmp/aula.
+
+c) Crie um arquivo chamado notas.txt.
+
+d) Adicione o conteúdo abaixo ao arquivo notas.txt:
+
+ 
+Aluno1: 8
+Aluno2: 7
+Aluno3: 9
+e) Crie uma cópia do arquivo notas.txt com o nome notas_backup.txt.
+
+f) Renomeie o arquivo notas.txt para notas_2026.txt.
+
+g) Liste todos os arquivos do diretório para verificar as alterações.
+
+h) Poste evidência dos comandos utilizados e do resultado na tela, comprovando a execução de todas as ações.

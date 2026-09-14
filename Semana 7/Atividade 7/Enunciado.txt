@@ -1,0 +1,12 @@
+Fórum Publico da Semana 07 - Atividade 07 - Manipulando Diretorios
+a) Acesse a Máquina Virtual (MV).
+
+b) Acesse o diretório /tmp.
+
+c) Crie um diretório chamado Documentos e, dentro dele, crie um arquivo chamado senhas.
+
+d) Acesse o diretório raiz /.
+
+e) Volte para o diretório HOME e apague o diretório Documentos, criando recentemente em tmp.
+
+f) Mostre evidência dos comandos utilizados e dos resultados na tela, comprovando a execução.

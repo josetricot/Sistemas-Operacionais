@@ -1,0 +1,10 @@
+6 GB de RAM equivalem a 6.144 MB (no cálculo binário tradicional) ou 6.000 MB (no cálculo decimal usado por fabricantes). 
+Fiz com binário tradicional.
+Comandos utlizados:
+ip a
+ip -4 a
+//ips internos
+curl ifconfig.me
+//ip pro mundo, no caso ipv6, uso vivo
+ls cpu //montrar os 8 núcleos
+free -h //monstrar mem ram

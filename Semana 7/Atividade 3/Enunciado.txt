@@ -1,0 +1,21 @@
+Fórum Publico da Semana 07 - Atividade 03 - Finalizando Processos
+a) Acessar a Máquina Virtual (MV) através de SSH (verifique se é necessário instalar).
+
+b) Crie um Shell Script que gere no console todos os valores pares, de 1 até 1.000, utilizando sleep 1 a cada número, e gravando a saída em um arquivo chamado pares.txt.
+
+#!/bin/bash 
+for i in {2..10..1} 
+do 
+echo $i
+sleep 1 
+done
+
+c) Crie outro Shell Script que gere no console todos os valores ímpares, de 1 até 1.000, também utilizando sleep 1 a cada número, e gravando a saída em um arquivo chamado impares.txt.
+
+d) Executar os dois scripts em paralelo cada um em um terminal diferente.
+
+d.1) Abrir e Executar o script impares.sh em segundo plano; 
+
+d.2) Abrir e Executar o script pares.sh em primeiro plano e após a exeucação, alterar para executar em segundo plano. 
+
+e) No terceiro terminal, finalizar o script impares, capturar a tela (print) de todos os terminais e postar como comprovação dos comandos utilizados. 
