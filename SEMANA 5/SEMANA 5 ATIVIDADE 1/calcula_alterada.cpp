@@ -9,7 +9,7 @@ double resultado2 = 0;
 /*void  soma_massiva(long long limite) {
     double soma = 0.0;
     for (long long i = 1; i <= limite; i++) {
-        soma += sqrt(i) / (i + 1.0); // operação mais pesada que apenas somar
+        soma += sqrt(i) / (i + 1.0); // operaÃ§Ã£o mais pesada que apenas somar
     }
     resultado1 =  soma;
 }
@@ -34,7 +34,7 @@ void *soma_massiva(void *argumento){
    
     double soma = 0.0;
     for (long long i = 1; i <= limite; i++) {
-        soma += sqrt(i) / (i + 1.0); // operação mais pesada que apenas somar
+        soma += sqrt(i) / (i + 1.0); // operaÃ§Ã£o mais pesada que apenas somar
     }
     resultado1 =  soma;
     pthread_exit(NULL); //incluida pois as funcoes agora sao void
@@ -77,7 +77,7 @@ int main() {
 
 	pthread_t f1, f2;
 	
-    printf("Iniciando o Procesos de calculos massivos Sequencial...\n");
+    printf("Iniciando o Procesos de calculos massivos Paralelos...\n");
 
     printf("Calculos Soma massivos ...\n");
 	
@@ -86,9 +86,9 @@ int main() {
 	//pthread_create(&f1,NULL,soma_massiva, n1);
 	//funcao espera receber o valor escondido
 	pthread_create(&f1, NULL, soma_massiva, (void *)n1);
-	//passa o n1 fazendo um cast direto para ponteiro genérico
+	//passa o n1 fazendo um cast direto para ponteiro genÃ©rico
 	
-	printf("Calculos aproximação do Pi ...\n");
+	printf("Calculos aproximaÃ§Ã£o do Pi ...\n");
 	
 	//aproximar_pi(n2);
 	pthread_create(&f2, NULL, aproximar_pi, (void *)n2);
@@ -98,7 +98,7 @@ int main() {
 	
     printf("Resultado da soma massiva: %.6f\n", resultado1);
 
-    printf("Aproximação de Pi: %.12f\n", resultado2);
+    printf("AproximaÃ§Ã£o de Pi: %.12f\n", resultado2);
 
     printf("Calculos finalizados.\n");
 
