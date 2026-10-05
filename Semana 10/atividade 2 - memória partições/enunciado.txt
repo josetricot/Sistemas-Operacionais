@@ -1,0 +1,32 @@
+Fórum Publico para Compartilhamento da Atividade da Semana 10 - Memória - Partições
+Considere um sistema operacional que utiliza gerenciamento de memória por partições fixas. Cada processo é carregado em uma partição específica da memória principal.
+
+A tabela de partições é apresentada a seguir:
+
+Partição	Endereço Inicial	Tamanho
+P1	0	1000
+P2	1000	2000
+P3	3000	1500
+P4	4500	2500
+Os processos foram carregados da seguinte forma:
+
+Processo	Partição
+A	P1
+B	P2
+C	P3
+D	P4
+Determine o endereço físico correspondente para os seguintes endereços lógicos:
+
+Processo A → deslocamento 250
+Processo B → deslocamento 1200
+Processo C → deslocamento 800
+Processo D → deslocamento 2000
+Processo A → deslocamento 1200
+Processo C → deslocamento 1600
+Processo B → deslocamento 1999
+Processo D → deslocamento 2499
+Antes de realizar o cálculo, verifique se o deslocamento é válido para o tamanho da partição.
+Caso o deslocamento ultrapasse o tamanho da partição, informe:
+ERRO DE ENDEREÇAMENTO
+ 
+Para os casos válidos informe o endereço físico final.

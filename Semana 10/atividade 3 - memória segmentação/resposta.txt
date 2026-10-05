@@ -1,0 +1,43 @@
+A lógica da segmentação é muito parecida com a de partições, mas ao invés de colocar tudo em um "blocão" de memória, ele é fatiado em seguimentos, pedaços menores (cada um com sua base e limite).
+
+Agora o endereço é um par de informações (segmento, deslocamento).
+
+1. (0, 120)
+segmento 0 limite é 400 e base 1000
+120 < 400 válido
+endereço físico = base + deslocamento = 1000 + 120 = 1120
+
+2. (1, 350)
+segmento 1 limite é 600 e base 2400
+350 < 600 válido
+endereço físico = base + deslocamento = 2400 + 350 = 2750
+
+3. (2, 150)
+segmento 2 limite é 300 e base 5000
+150 < 300 válido
+endereço físico = base + deslocamento = 5000 + 150 = 5150
+
+4. (3, 420)
+segmento 3 limite é 500 e base 8000
+420 < 500 válido
+endereço físico = base + deslocamento = 8000 + 420 = 8420
+
+5. (1, 610)
+segmento 1 limite é 600 e base 2400
+610 ultrapassa lime 600
+ERRO DE SEGMENTAÇÃO
+
+6.(2, 290)
+segmento 2 limite é 300 e base 5000
+290 < 300 válido
+endereço físico = base + deslocamento = 5000 + 290 = 5290
+
+7. (0, 399)
+segmento 0 limite é 400 e base 1000
+399 < 400 válido
+endereço físico = base + deslocamento = 1000 + 399 = 1399
+
+8. (3, 501)
+segmento 3 limite é 500 e base 8000
+501 ultrapassa lime 500
+ERRO DE SEGMENTAÇÃO

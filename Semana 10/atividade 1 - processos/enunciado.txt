@@ -1,0 +1,19 @@
+Fórum Publico para Compartilhamento da Atividade da Semana 10 - Processos
+Considere a máquina virtual utilizada durante as aulas e/ou avaliações práticas. Acesse o sistema utilizando o usuário root e execute o programa Gera_Sequencia.c disponibilizado na Semana 06.
+
+Realize os procedimentos descritos a seguir:
+
+Execute o programa utilizando a prioridade padrão do sistema operacional.
+Execute o programa utilizando uma prioridade alta.
+Execute o programa utilizando uma prioridade baixa.
+Para cada execução:
+
+Meça o tempo de execução do programa.
+Compare os resultados obtidos.
+Determine o ganho ou perda de desempenho causado pela alteração das prioridades.
+Após essa etapa:
+
+Execute duas instâncias do programa simultaneamente, utilizando prioridades diferentes (uma alta e outra baixa).
+Observe o comportamento do escalonador do sistema operacional.
+Determine qual processo finalizará primeiro quando ambos estiverem executando concorrentemente.
+Explique por que isso ocorre, relacionando o resultado com o conceito de prioridade de processos e escalonamento da CPU.

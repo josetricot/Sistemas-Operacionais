@@ -1,0 +1,2 @@
+Quando rodo o programa com diferentes prioridades a diferença é pequena, pois não existem outras tarefas sendo executadas (fora as do sistema).
+Já quando colocamos a rodar de forma concorrente, a diferença aumenta consideravelmente. A diferença só não foi ainda maior por configurei essa máquina virtual com vários núcleos (o escalonador pode ter colocado em um núcleo separado a rodar).

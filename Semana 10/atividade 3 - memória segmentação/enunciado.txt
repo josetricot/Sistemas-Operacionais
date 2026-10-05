@@ -1,0 +1,25 @@
+Fórum Publico para Compartilhamento da Atividade da Semana 10 - Memória - Segmentação
+Considere um sistema operacional que utiliza gerenciamento de memória por segmentação. Cada processo é dividido em segmentos, e cada endereço lógico é representado pelo par: O sistema converte o endereço lógico em endereço físico.
+
+A tabela de segmentos do processo é apresentada a seguir:
+
+Segmento	Base	Limite
+0	1000	400
+1	2400	600
+2	5000	300
+3	8000	500
+Determine o endereço físico correspondente para os seguintes endereços lógicos:
+
+(0, 120)
+(1, 350)
+(2, 150)
+(3, 420)
+(1, 610)
+(2, 290)
+(0, 399)
+(3, 501)
+Verifique inicialmente se o deslocamento é válido para o limite do segmento.
+Caso o deslocamento ultrapasse o limite do segmento, informe:
+ERRO DE SEGMENTAÇÃO
+ 
+Para os casos válidos, apresente o endereço físico final obtido.

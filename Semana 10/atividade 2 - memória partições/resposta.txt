@@ -1,0 +1,45 @@
+O modelo de memória virtual por partições consiste em dividir a memória física em blocos (partições) onde cada processo é carregado. Para que o sistema saiba onde um processo começa e até onde ele pode ir com segurança, a Unidade de Gerência de Memória (MMU) utiliza dois registradores principais para cada partição:   
+Registrador Base (B): Define o endereço físico inicial da partição.
+Registrador Limite (L): Define o tamanho em bytes dessa partição.
+
+O Endereço Inicial corresponde exatamente ao registrador Base (B).
+O Tamanho corresponde exatamente ao registrador Limite (L).
+O Deslocamento solicitado no problema é o endereço lógico (el) gerado pelo processador.
+
+A regra de tradução para encontrar o Endereço Físico (ef) baseia-se em dois passos lógicos:
+Verificação de Segurança: A MMU sempre compara o endereço lógico gerado (el) com o valor do Limite (L).
+Se o deslocamento for maior ou igual ao tamanho (el >= L), o sistema identifica um acesso inválido e gera uma interrupção (exercício chama de "ERRO DE ENDEREÇAMENTO").
+Cálculo Final: Se a verificação for válida (el < L), a MMU soma o deslocamento ao valor da Base para encontrar a posição real na memória RAM: ef = el + B.   
+
+
+Processo A → deslocamento 250
+limite A é 1000 -> deslocamento dentro do limite
+endereço físico = base + deslocamento = 0 + 250 = 250  
+
+Processo B → deslocamento 1200
+limite de B é 2000 -> deslocamento dentro do limite
+endereço físico = base + deslocamento = 1000 + 1200 = 2200  
+
+Processo C → deslocamento 800
+limite de C é 1500 -> deslocamento dentro do limite
+endereço físico = base + deslocamento =  3000 + 800 = 3800
+
+Processo D → deslocamento 2000
+limite de D é 4500 -> deslocamento dentro do limite
+endereço físico = base + deslocamento = 4500 + 2000 = 6500
+
+Processo A → deslocamento 1200
+limite A é 1000 -> deslocamento fora do limite
+ERRO DE ENDEREÇAMENTO
+
+Processo C → deslocamento 1600
+limite de C é 1500 -> deslocamento fora do limite
+ERRO DE ENDEREÇAMENTO
+
+Processo B → deslocamento 1999
+limite de B é 2000 -> deslocamento dentro do limite
+endereço físico = base + deslocamento = 1000 + 1999 = 2999
+
+Processo D → deslocamento 2499
+limite de D é 4500 -> deslocamento dentro do limite
+endereço físico = base + deslocamento = 4500 + 2499 = 6999
